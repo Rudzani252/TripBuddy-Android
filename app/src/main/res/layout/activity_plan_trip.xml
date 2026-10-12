@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    style="@style/SCREEN"
+    tools:context=".plan_trip">
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Destination"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/activities"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Activities Expenses"
+        app:layout_constraintTop_toBottomOf="@id/destination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+
+    <DatePicker
+        android:id="@+id/datePick1"
+        android:layout_width="348dp"
+        android:layout_height="103dp"
+        android:layout_margin="16dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activities" />
+
+    <Button
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Start Date"
+        style="@style/BUTTON"
+        app:layout_constraintTop_toBottomOf="@id/datePick1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick End Date"
+        style="@style/BUTTON"
+        app:layout_constraintTop_toBottomOf="@id/datePick1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:entries="@array/Activities"
+        app:layout_constraintTop_toBottomOf="@id/startDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/transport"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:hint="Transport/Visa Fees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+    <EditText
+        android:id="@+id/rent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Rent Expense"
+        app:layout_constraintTop_toBottomOf="@id/transport"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/meal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Meal Expense"
+        app:layout_constraintTop_toBottomOf="@id/rent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/addExp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Additional Travel-Related Expenses (Optional)"
+        app:layout_constraintTop_toBottomOf="@id/meal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/saveTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Save Trip"
+        style="@style/BUTTON"
+        app:layout_constraintEnd_toStartOf="@+id/planTrip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addExp" />
+
+    <Button
+        android:id="@+id/planTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Plan Trip"
+        style="@style/BUTTON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addExp" />
+
+    <TextView
+        android:id="@+id/cal"
+        style="@style/TEXT"
+        android:layout_width="168dp"
+        android:layout_height="85dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:text="data from cal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addExp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

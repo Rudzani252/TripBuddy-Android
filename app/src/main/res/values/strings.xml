@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TripBuddy v1.0</string>
+    <string-array name="Activities">
+        <item> sightseeing R</item>
+        <item> hiking R</item>
+        <item> Dining R</item>
+        <item> museum tour R</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    style="@style/SCREEN"
+    tools:context=".home">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Welcome to TripBuddy"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        style="@style/TEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="173dp"
+        android:layout_height="23dp"
+        android:text="Name:"
+        style="@style/TEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338"
+        tools:layout_editor_absoluteX="99dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <Button
+        android:id="@+id/plan"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prussian_blue"
+        android:text="Plan Trip"
+        android:textColor="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/settings"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prussian_blue"
+        android:text="Setting"
+        android:textColor="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/memories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prussian_blue"
+        android:text="Memories"
+        style="@style/BUTTON"
+        android:textColor="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prussian_blue"
+        android:text="Logout"
+        android:textColor="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
